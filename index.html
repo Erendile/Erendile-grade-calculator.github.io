@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="./skeleton/normalize.css">
+    <link rel="stylesheet" href="./skeleton/skeleton.css ">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Grade Calculator</h1>
+    </div>
+
+    <form class="container text-center" id="form-calculate">
+        <div>
+            <label for="grade">Sınıf</label>
+            <select name="main-grade" id="main-menu" class="custom-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div id="kurul">
+            <div>
+                <label for="kurul1">1. Kurul</label>
+                <input type="text" id="kurul1">
+            </div>
+            <div>
+                <label for="kurul2">2. Kurul</label>
+                <input type="text" id="kurul2">
+            </div>
+            <div>
+                <label for="kurul3">3. Kurul</label>
+                <input type="text" id="kurul3">
+            </div>
+            <div>
+                <label for="kurul4">4. Kurul</label>
+                <input type="text" id="kurul4">
+            </div>
+        </div>
+        
+        <div id="final">
+            <div>
+                <label for="final1">Final</label>
+                <input type="text" id="final1">
+            </div>
+        </div>
+        <div>
+            <input class="button-primary" type="submit" id="calculate" value="Hesapla">
+        </div>
+    </form>
+    
+    <hr>
+
+    <h3 class="text-center">Ortalama</h3>
+    <div class="text-center">
+        <p class="mean-style" id="mean"></p>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
